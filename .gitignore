@@ -1,0 +1,6 @@
+.data/
+server.log
+server-error.log
+*.zip
+.env
+node_modules/

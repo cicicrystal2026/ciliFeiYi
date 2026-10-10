@@ -1,0 +1,1 @@
+{"name":"cili-cultural-demo","version":"1.0.0","private":true,"type":"module","scripts":{"start":"node server.js","test":"node --test tests/*.test.js","check":"node --check server.js && node --check business.js && node --check public/app.js && node --check public/runtime.js"},"engines":{"node":">=20"}}

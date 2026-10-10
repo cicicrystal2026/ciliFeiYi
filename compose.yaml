@@ -1,0 +1,17 @@
+services:
+  demo:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8769:8769"
+    environment:
+      HOST: 0.0.0.0
+      PORT: 8769
+      DATA_DIR: /data
+      DEMO_USER: ${DEMO_USER:-}
+      DEMO_PASSWORD: ${DEMO_PASSWORD:-}
+    volumes:
+      - demo-data:/data
+    stop_grace_period: 10s
+volumes:
+  demo-data:
